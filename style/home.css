@@ -7,3 +7,62 @@ nav {
     color: rgb(253, 207, 101);
     border-style: double;
 }
+
+.barra-buscador article{
+    display: flex;
+    display: inline;
+    justify-content: space-between;
+    
+}
+
+.banner{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+} 
+
+.peliculas{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+    
+}
+
+.series{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+}
+
+.mas-vistos{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+}
+
+.banner ul{
+    list-style: none;
+}
+
+.peliculas ul{
+    list-style: none;
+}
+
+.series ul{
+    list-style: none;
+}
+
+.mas-vistos ul{
+    list-style: none;
+}
