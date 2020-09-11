@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(27, 36, 45);
+}
+nav {
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+}
