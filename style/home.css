@@ -12,7 +12,7 @@ nav {
     display: flex;
     display: inline;
     justify-content: space-between;
-    
+    color: azure;
 }
 
 .banner{
@@ -20,6 +20,7 @@ nav {
     align-items: flex-start;
     color: rgb(253, 207, 101);
     border-style: double;
+    border-color: ;
 } 
 
 .peliculas{
