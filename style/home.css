@@ -1,19 +1,22 @@
 body {
     background-color: rgb(27, 36, 45);
 }
-nav {
+
+.primersection {
     display: flex;
-    align-items: flex-start;
     color: rgb(253, 207, 101);
     border-style: double;
 }
-
-.barra-buscador article{
+  
+nav a{
     display: flex;
-    display: inline;
-    justify-content: space-between;
+    justify-content: flex-end;
     color: azure;
+    justify-items: row;
+   
+
 }
+
 
 .banner{
     display: flex;
