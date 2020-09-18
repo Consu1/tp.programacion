@@ -12,8 +12,8 @@ nav a{
     display: flex;
     justify-content: flex-end;
     color: azure;
-    justify-items: row;
     text-decoration: none;
+    padding: 10px;
    
 
 }
