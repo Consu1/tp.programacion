@@ -13,6 +13,7 @@ nav a{
     justify-content: flex-end;
     color: azure;
     justify-items: row;
+    text-decoration: none;
    
 
 }
