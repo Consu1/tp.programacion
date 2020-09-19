@@ -14,8 +14,7 @@ nav a{
     color: azure;
     text-decoration: none;
     padding: 10px;
-   
-
+    
 }
 
 
@@ -24,7 +23,8 @@ nav a{
     align-items: flex-start;
     color: rgb(253, 207, 101);
     border-style: double;
-    border-color: ;
+    font-size: 22px;
+
 } 
 
 .peliculas{
@@ -32,7 +32,8 @@ nav a{
     align-items: flex-start;
     color: rgb(253, 207, 101);
     border-style: double;
-    
+    font-family: 'Solway', serif;
+    font-size: 22px;
 }
 
 .series{
@@ -40,6 +41,8 @@ nav a{
     align-items: flex-start;
     color: rgb(253, 207, 101);
     border-style: double;
+    font-family: 'Solway', serif;
+    font-size: 22px;
 }
 
 .mas-vistos{
@@ -47,6 +50,8 @@ nav a{
     align-items: flex-start;
     color: rgb(253, 207, 101);
     border-style: double;
+    font-family: 'Solway', serif;
+    font-size: 22px;
 }
 
 .footer{
@@ -54,7 +59,9 @@ nav a{
     align-items: flex-start;
     color: rgb(253, 207, 101);
     border-style: double;
+    font-family: 'Solway', serif;
 }
+
 
 .banner ul{
     list-style: none;
