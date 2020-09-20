@@ -3,8 +3,58 @@ body {
 }
 .primersection {
     display: flex;
-    justify-content: flex-end;
+    color: rgb(253, 207, 101);
+    border-style: double;
+}
+nav a{
+    display: flex;
     color: azure;
+    justify-content: flex-end;
     text-decoration: none;
     padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: 'Solway', serif;
+}
+
+h2 {
+    font-size: 15px;
+    font-family:'Solway', serif;
+}
+
+.accion{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+    font-family: 'Solway', serif;
+    font-size: 22px;
+}
+
+.romanticas{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+    font-family: 'Solway', serif;
+    font-size: 22px;
+}
+
+.drama{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+    font-family: 'Solway', serif;
+    font-size: 22px;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-start;
+    color: rgb(253, 207, 101);
+    border-style: double;
+    font-family: 'Solway', serif;
 }
