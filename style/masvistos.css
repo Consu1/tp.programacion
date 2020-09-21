@@ -12,14 +12,26 @@ nav a{
     justify-content: flex-end;
     text-decoration: none;
     padding: 10px;
+    color: azure;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 24px;
+}
+
+.banner {
+    border-style: double;
 }
 
 h2 {
+    font-size: 22px;
+}
+
+h3 {
     font-size: 15px;
+}
+p {
+    color: azure;
 }
 
 .peliculas{
@@ -40,4 +52,5 @@ h2 {
     display: flex;
     align-items: flex-start;
     border-style: double;
+    color: azure;
 }

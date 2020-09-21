@@ -12,14 +12,30 @@ nav a{
     justify-content: flex-end;
     text-decoration: none;
     padding: 10px;
+    color: azure;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 24px;
+}
+
+.banner {
+    border-style: double;
+}
+
+.descripcion {
+    border-style: double;
 }
 
 h2 {
+    font-size: 22px;
+}
+
+h3 {
     font-size: 15px;
+}
+p {
+    color: azure;
 }
 
 .reality{
@@ -35,8 +51,7 @@ h2 {
     border-style: double;
     font-size: 22px;
 }
-
-.documentales{
+.documentales {
     display: flex;
     align-items: flex-start;
     border-style: double;
@@ -48,4 +63,5 @@ h2 {
     align-items: flex-start;
     border-style: double;
     font-family: 'Solway', serif;
+    color: azure;
 }

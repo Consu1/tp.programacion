@@ -3,18 +3,16 @@ body {
     font-family: 'Solway', serif;
     color: rgb(253, 207, 101);
 }
-
 .primersection {
     display: flex;
     border-style: double;
 }
-  
 nav a{
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
     padding: 10px;
-    
+    color: azure;
 }
 
 
@@ -23,48 +21,50 @@ nav a{
     align-items: flex-start;
     border-style: double;
     font-size: 22px;
-
 } 
 
+h1 {
+    font-size: 24px;
+}
+
+.banner {
+    border-style: double;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 15px;
+}
+p {
+    color: azure;
+}
 .peliculas{
     display: flex;
     align-items: flex-start;
     border-style: double;
-    font-size: 22px;
+    font-size: 20px;
 }
 
-.series{
-    display: flex;
-    align-items: flex-start;
-    font-size: 22px;
-}
-
-.mas-vistos{
+.series {
     display: flex;
     align-items: flex-start;
     border-style: double;
-    font-size: 22px;
+    font-size: 20px;
 }
 
-.footer{
+.masvistos {
     display: flex;
     align-items: flex-start;
     border-style: double;
+    font-size: 20px;
 }
 
-
-.banner ul{
-    list-style: none;
-}
-
-.peliculas ul{
-    list-style: none;
-}
-
-.series ul{
-    list-style: none;
-}
-
-.mas-vistos ul{
-    list-style: none;
+.footer {
+    display: flex;
+    align-items: flex-start;
+    border-style: double;
+    color: azure;
 }
