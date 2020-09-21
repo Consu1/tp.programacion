@@ -1,17 +1,17 @@
 body {
     background-color: rgb(27, 36, 45);
+    font-family: 'Solway', serif;
+    color: rgb(253, 207, 101);
 }
 
 .primersection {
     display: flex;
-    color: rgb(253, 207, 101);
     border-style: double;
 }
   
 nav a{
     display: flex;
     justify-content: flex-end;
-    color: azure;
     text-decoration: none;
     padding: 10px;
     
@@ -21,7 +21,6 @@ nav a{
 .banner{
     display: flex;
     align-items: flex-start;
-    color: rgb(253, 207, 101);
     border-style: double;
     font-size: 22px;
 
@@ -30,36 +29,27 @@ nav a{
 .peliculas{
     display: flex;
     align-items: flex-start;
-    color: rgb(253, 207, 101);
     border-style: double;
-    font-family: 'Solway', serif;
     font-size: 22px;
 }
 
 .series{
     display: flex;
     align-items: flex-start;
-    color: rgb(253, 207, 101);
-    border-style: double;
-    font-family: 'Solway', serif;
     font-size: 22px;
 }
 
 .mas-vistos{
     display: flex;
     align-items: flex-start;
-    color: rgb(253, 207, 101);
     border-style: double;
-    font-family: 'Solway', serif;
     font-size: 22px;
 }
 
 .footer{
     display: flex;
     align-items: flex-start;
-    color: rgb(253, 207, 101);
     border-style: double;
-    font-family: 'Solway', serif;
 }
 
 

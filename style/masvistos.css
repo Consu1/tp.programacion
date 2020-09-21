@@ -22,21 +22,14 @@ h2 {
     font-size: 15px;
 }
 
-.accion{
+.peliculas{
     display: flex;
     align-items: flex-start;
     border-style: double;
     font-size: 22px;
 }
 
-.romanticas{
-    display: flex;
-    align-items: flex-start;
-    border-style: double;
-    font-size: 22px;
-}
-
-.drama{
+.series{
     display: flex;
     align-items: flex-start;
     border-style: double;

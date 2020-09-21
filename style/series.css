@@ -1,6 +1,51 @@
 body {
     background-color: rgb(27, 36, 45);
+    font-family: 'Solway', serif;
+    color: rgb(253, 207, 101);
 }
-.series {
-   
+.primersection {
+    display: flex;
+    border-style: double;
+}
+nav a{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.reality{
+    display: flex;
+    align-items: flex-start;
+    border-style: double;
+    font-size: 22px;
+}
+
+.romanticas{
+    display: flex;
+    align-items: flex-start;
+    border-style: double;
+    font-size: 22px;
+}
+
+.documentales{
+    display: flex;
+    align-items: flex-start;
+    border-style: double;
+    font-size: 22px;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-start;
+    border-style: double;
+    font-family: 'Solway', serif;
 }
