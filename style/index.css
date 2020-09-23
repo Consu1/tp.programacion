@@ -28,6 +28,7 @@ h1 {
 }
 
 .banner {
+    
     border-style: double;
 }
 
@@ -36,7 +37,9 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+
+    font-size: 15px;   
+
 }
 p {
     color: azure;
@@ -62,9 +65,10 @@ p {
     font-size: 20px;
 }
 
-.footer {
-    display: flex;
-    align-items: flex-start;
-    border-style: double;
+.footer ul{
+    justify-content: space-evenly;
+    text-align-last: center;
     color: azure;
+    list-style: none;
+    
 }
