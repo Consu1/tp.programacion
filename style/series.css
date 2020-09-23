@@ -21,6 +21,7 @@ h1 {
 
 .banner {
     border-style: double;
+    display: flex;
 }
 
 .descripcion {
