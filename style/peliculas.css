@@ -55,9 +55,11 @@ p {
     font-size: 20px;
 }
 
-.footer {
-    display: flex;
-    align-items: flex-start;
-    border-style: double;
+.footer ul{
+    justify-content: space-evenly;
+    align-items: center;
     color: azure;
+    list-style: none;
+    font-family: 'Solway', serif;
+    
 }

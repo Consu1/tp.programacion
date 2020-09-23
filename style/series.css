@@ -59,10 +59,12 @@ p {
     font-size: 22px;
 }
 
-.footer{
-    display: flex;
-    align-items: flex-start;
-    border-style: double;
-    font-family: 'Solway', serif;
+
+.footer ul{
+    justify-content: space-evenly;
+    align-items: center;
     color: azure;
+    list-style: none;
+    font-family: 'Solway', serif;
+    
 }
