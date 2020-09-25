@@ -86,27 +86,28 @@ p {
     color: azure;
 }
 
-.reality{
+.masvistos{
     display: flex;
     align-items: flex-start;
     border-style: double;
     font-size: 22px;
+    justify-content: space-between;
 }
 
-.romanticas{
+.populares{
     display: flex;
     align-items: flex-start;
     border-style: double;
     font-size: 22px;
+    justify-content: space-between;
 }
-.documentales {
+.parati {
     display: flex;
     align-items: flex-start;
     border-style: double;
     font-size: 22px;
+    justify-content: space-between;
 }
-
-
 .footer ul{
     justify-content: space-evenly;
     align-items: center;

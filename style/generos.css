@@ -59,6 +59,7 @@ p {
     align-items: flex-start;
     border-style: double;
     font-size: 22px;
+    justify-content: space-between;
 }
 
 .series{
@@ -66,6 +67,7 @@ p {
     align-items: flex-start;
     border-style: double;
     font-size: 22px;
+    justify-content: space-between;
 }
 
 .footer ul{

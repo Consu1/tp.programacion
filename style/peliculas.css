@@ -81,26 +81,29 @@ p {
     color: azure;
 }
 
-.accion{
+.masvistos{
     display: flex;
     align-items: flex-start;
     border-style: double;
-    font-size: 20px;
+    font-size: 22px;
+    justify-content: space-between;
 }
 
-.romanticas{
+.populares{
     display: flex;
     align-items: flex-start;
     border-style: double;
-    font-size: 20px;
+    font-size: 22px;
+    justify-content: space-between;
+}
+.parati {
+    display: flex;
+    align-items: flex-start;
+    border-style: double;
+    font-size: 22px;
+    justify-content: space-between;
 }
 
-.drama{
-    display: flex;
-    align-items: flex-start;
-    border-style: double;
-    font-size: 20px;
-}
 
 .footer ul{
     justify-content: space-evenly;
