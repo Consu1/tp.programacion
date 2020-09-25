@@ -1,21 +1,22 @@
 body {
-    background-color: rgb(27, 36, 45);
+    background-color:black;
     font-family: 'Solway', serif;
     color: rgb(253, 207, 101);
 
 }
+
 .primersection {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
     border-style: double;
 }
-nav a{
+.primersection ul {
     display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
-    padding: 10px;
-    color: azure;
+    justify-content: space-between;
+    list-style: none;
 }
-
 
 .banner{
     display: flex;
@@ -74,4 +75,3 @@ p {
     font-family: 'Solway', serif;
     
 }
-
