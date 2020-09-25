@@ -47,11 +47,11 @@ h1 {
 .banner ul {
     list-style: none;
 }
-.reproducir {
-    background-color: #4CAf50;
+.Reproducir {
+    background-color: white;
     border: none;
     color: blanco;
-    padding: 15px 32px;
+    padding: 1px 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -60,7 +60,7 @@ h1 {
  
   
 .Vertrailer {
-    background-color: #4CAf50;
+    background-color: white;
     border: none;
     color: blanco;
     padding: 1px 2px;
