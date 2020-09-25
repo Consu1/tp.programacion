@@ -40,7 +40,9 @@ h1 {
 
 .banner {
     border-style: double;
-    display: flex;
+    display: flex;  
+    align-items: flex-start;
+    font-size: 22px;
 }
 .banner ul {
     list-style: none;
