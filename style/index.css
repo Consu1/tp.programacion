@@ -52,6 +52,30 @@ h1 {
 .banner ul {
     list-style: none;
 }
+.Reproducir {
+    background-color: white;
+    border: none;
+    color: blanco;
+    padding: 1px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    float:right; margin-right: 65%;
+}
+ 
+  
+.Vertrailer {
+    background-color: white;
+    border: none;
+    color: blanco;
+    padding: 1px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    text-align: right;
+}
 
 h2 {
     font-size: 22px;
