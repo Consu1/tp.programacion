@@ -48,7 +48,7 @@ h1 {
     list-style: none;
 }
 .reproducir {
-    background-color: # 4CAF50; / * * Verde /
+    background-color: #4CAf50;
     border: none;
     color: blanco;
     padding: 15px 32px;
@@ -56,10 +56,11 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    
 }
- .Vertrailer {
-    background-color: # 4CAF50; / * * Verde /
+ 
+  
+.Vertrailer {
+    background-color: #4CAf50;
     border: none;
     color: blanco;
     padding: 1px 2px;
