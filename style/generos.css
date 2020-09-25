@@ -20,6 +20,7 @@ body {
     text-decoration: none;
     color: white;
     align-items: center;
+    padding-inline-start: 0px;
 }
 .primersection li {
     padding-right: 15px;

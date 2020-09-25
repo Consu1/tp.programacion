@@ -19,6 +19,7 @@ body {
     text-decoration: none;
     color: white;
     align-items: center;
+    padding-inline-start: 0px;
 }
 .primersection li {
     padding-right: 15px;
@@ -40,6 +41,9 @@ h1 {
 .banner {
     border-style: double;
     display: flex;
+}
+.banner ul {
+    list-style: none;
 }
 
 .descripcion {
