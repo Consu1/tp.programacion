@@ -1,20 +1,38 @@
 body {
     background-color:black;
-    font-family: 'Solway', serif;
-    color: rgb(253, 207, 101);
+    font-family: 'Hind', sans-serif;
+    color:blue;
 }
 .primersection {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
     border-style: double;
-}
-nav a{
-    display: flex;
-    justify-content: flex-end;
     text-decoration: none;
-    padding: 10px;
-    color: azure;
-}
+    align-items: center;
 
+}
+.primersection ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+.primersection li {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.primersection a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 h1 {
     font-size: 24px;
 }
