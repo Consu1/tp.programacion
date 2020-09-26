@@ -54,27 +54,39 @@ p {
     color: azure;
 }
 
-.peliculas{
+.romanticas{
     display: flex;
     align-items: flex-start;
-    border-style: double;
     font-size: 22px;
     justify-content: space-between;
 }
 
-.series{
+.accion{
     display: flex;
     align-items: flex-start;
-    border-style: double;
     font-size: 22px;
     justify-content: space-between;
 }
+
+.terror{
+    display: flex;
+    align-items: flex-start;
+    font-size: 22px;
+    justify-content: space-between; 
+}
+
+
 
 .footer ul{
-    
+    display: flex;
     justify-content: space-evenly;
-    color: azure;
     list-style: none;
-    font-family: 'Solway', serif;
-    
+    font-family: 'Hind', sans-serif;
+    color: lightgrey;
+
+}
+
+.footer li{
+    color: lightslategray;
+    font-size: small;
 }
