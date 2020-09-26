@@ -5,6 +5,10 @@ body {
 
 }
 
+@media only screen and (min-width : 420px) {
+
+}
+
 .primersection {
     display: flex;
     justify-content: space-between;
@@ -148,4 +152,34 @@ p {
 .footer li{
     color: lightslategray;
     font-size: small;
+}
+
+
+@media only screen and (min-width : 420px) and (orientation:landscape) {
+
+    body {
+        background-color: gray;
+        font-family: 'Hind', sans-serif;
+        color: blue;
+    
+    }
+    .primersection {
+        display: flex;
+        width: max-content;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        border-style: double;
+        align-items: center;
+        
+    }
+
+    .peliculas{
+        display: flex;
+        border-color: none;
+        align-items: flex-start;
+        font-size: 20px;
+        justify-content: space-between;
+    
+    }
+
 }

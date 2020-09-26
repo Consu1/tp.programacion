@@ -13,6 +13,7 @@ body {
     align-items: center;
 
 }
+
 .primersection ul {
     display: flex;
     justify-content: space-between;
@@ -22,12 +23,14 @@ body {
     align-items: center;
     padding-inline-start: 0px;
 }
+
 .primersection li {
     padding-right: 15px;
     padding-left: 15px;
     text-decoration: none;
     color: #ffffff;
 }
+
 .primersection a {
     text-decoration: none;
     color: #ffffff;
@@ -61,11 +64,25 @@ p {
     justify-content: space-between;
 }
 
+.romanticas p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;  
+    font-size: medium;
+}
+
 .accion{
     display: flex;
     align-items: flex-start;
     font-size: 22px;
     justify-content: space-between;
+}
+
+.accion p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;  
+    font-size: medium;
 }
 
 .terror{
@@ -75,7 +92,12 @@ p {
     justify-content: space-between; 
 }
 
-
+.terror p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;  
+    font-size: medium;
+}
 
 .footer ul{
     display: flex;
