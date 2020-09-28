@@ -5,9 +5,6 @@ body {
 
 }
 
-@media only screen and (min-width : 420px) and (orientation: landscape){
-   
-}
 
 .primersection {
     display: flex;
@@ -155,4 +152,156 @@ p {
 }
 
 
-@media only screen and (min-width : 420px) and (orientation:landscape) 
+@media only screen and (min-width : 420px) and (orientation: landscape){
+    body {
+        background-color:black;
+        font-family: 'Hind', sans-serif;
+        color: blue;
+    
+    }
+    
+    .primersection {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        border-style: double;
+        align-items: center;
+    }
+    .primersection ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        color: white;
+        align-items: center;
+        padding-inline-start: 0px;
+    }
+    .primersection li {
+        padding-right: 15px;
+        padding-left: 15px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .primersection a {
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    
+    .banner{
+        display: flex;
+        align-items: flex-start;
+        border-style: double;
+        font-size: 22px;
+    } 
+    
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .banner {
+        border-style: double;
+    }
+    .banner ul {
+        list-style: none;
+    }
+    .Reproducir {
+        background-color: white;
+        border: none;
+        color: blanco;
+        padding: 1px 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        float:right; margin-right: 65%;
+    }
+     
+      
+    .Vertrailer {
+        background-color: white;
+        border: none;
+        color: blanco;
+        padding: 1px 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        text-align: right;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+    
+        font-size: 15px;   
+    
+    }
+    p {
+        color: azure;
+    }
+    .peliculas{
+        display: flex;
+        border-color: none;
+        align-items: flex-start;
+        font-size: 20px;
+        justify-content: space-between;
+    
+    }
+    
+    .peliculas p{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: medium;
+    
+    }
+    
+    .series {
+        display: flex;
+        align-items: flex-start;
+        border-color: none;
+        font-size: 20px;
+        justify-content: space-between;
+    }
+    
+    .series p{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;  
+        font-size: medium;
+    }
+    
+    .masvistos {
+        display: flex;
+        align-items: flex-start;
+        border-color: none;
+        font-size: 20px;
+        justify-content: space-between;
+    }
+    
+    .masvistos p{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center; 
+        font-size: medium; 
+    }
+    
+    .footer ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        font-family: 'Hind', sans-serif;
+        color: lightgrey;
+    
+    }
+    
+    .footer li{
+        color: lightslategray;
+        font-size: small;
+    }
+}

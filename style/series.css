@@ -140,3 +140,149 @@ p {
     color: lightslategray;
     font-size: small;
 }
+
+@media only screen and (min-width : 420px) and (orientation: landscape){
+    
+    body {
+        background-color: black;
+        font-family: 'Hind', sans-serif;
+        color: blue;
+    }
+    .primersection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        border-style: double;
+        text-decoration: none;
+        align-items: center;
+    }
+    .primersection ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        padding-inline-start: 0px;
+    }
+    .primersection li {
+        padding-right: 15px;
+        padding-left: 15px;
+      
+    }
+    .primersection a {
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    h1 {
+        font-size: 24px;
+        color: white;
+    }
+    
+    .banner {
+        display: flex;
+        align-items: flex-start;
+        border-style: double;
+        font-size: 22px;
+    }
+    .banner ul {
+        list-style: none;
+    }
+    .Reproducir {
+        background-color: white;
+        border: none;
+        color: blanco;
+        padding: 1px 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        float: right ;margin-right: 65%;
+    }
+     
+      
+    .Vertrailer {
+        background-color: white;
+        border: none;
+        color: blanco;
+        padding: 1px 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        text-align: right;
+    }
+    .descripcion {
+        border-style: double;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        color: azure;
+    }
+    
+    .masvistos{
+        display: flex;
+        align-items: flex-start;
+        font-size: 22px;
+        justify-content: space-between;
+    }
+    
+    .masvistos p{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: medium;
+    }
+    
+    .populares{
+        display: flex;
+        align-items: flex-start;
+        font-size: 22px;
+        justify-content: space-between;
+    }
+    
+    .populares p{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: medium;
+    }
+    
+    .parati {
+        display: flex;
+        align-items: flex-start;
+        font-size: 22px;
+        justify-content: space-between;
+    }
+    
+    .parati p{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: medium;
+    }
+    .footer ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        font-family: 'Hind', sans-serif;
+        color: lightgrey;
+    
+    }
+    
+    .footer li{
+        color: lightslategray;
+        font-size: small;
+    }  
+}
