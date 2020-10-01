@@ -2,23 +2,28 @@ body {
     background-color:black;
     font-family: 'Hind', sans-serif;
     color: rgb(81, 113, 255);
+    padding: 15px;
 
 }
 
 .primersection {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-bottom: 5px;
     border-style: double;
+    text-decoration: none;
     align-items: center;
 }
 .primersection ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    text-decoration: none;
     color: white;
     align-items: center;
     padding-inline-start: 0px;
+    padding-right: 15px;
 }
 .primersection li {
     padding-right: 10px;
@@ -37,18 +42,20 @@ h1 {
     font-size: 24px;
 }
 
-.banner{
-    display: flex;
-    align-items: flex-start;
-    border-style: double;
-    font-size: 22px;
-} 
-
 .banner {
-    border-style: double;
+    border-style: none;
+    display: flex;  
+    align-items: flex-start;
+    font-size: 22px;
 }
 .banner ul {
     list-style: none;
+}
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
 }
 .Reproducir {
     background-color: white;
@@ -59,9 +66,11 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    float:right; margin-right: 65%;
+    float: right;
+    margin-right: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
- 
   
 .Vertrailer {
     background-color: white;
@@ -73,6 +82,9 @@ h1 {
     display: inline-block;
     font-size: 20px;
     text-align: right;
+    padding-left: 25px;
+    padding-right: 25px;
+
 }
 
 h2 {
@@ -89,17 +101,15 @@ p {
 }
 .peliculas{
     display: flex;
-    border-color: none;
     align-items: flex-start;
-    font-size: 20px;
+    font-size: 22px;
     justify-content: space-between;
-
 }
 
 .peliculas p{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center;  
     font-size: medium;
 
 }
@@ -107,8 +117,7 @@ p {
 .series {
     display: flex;
     align-items: flex-start;
-    border-color: none;
-    font-size: 20px;
+    font-size: 22px;
     justify-content: space-between;
 }
 
@@ -122,16 +131,15 @@ p {
 .masvistos {
     display: flex;
     align-items: flex-start;
-    border-color: none;
-    font-size: 20px;
+    font-size: 22px;
     justify-content: space-between;
 }
 
 .masvistos p{
     display: flex;
     align-items: flex-start;
-    justify-content: center; 
-    font-size: medium; 
+    justify-content: center;  
+    font-size: medium
 }
 
 .footer ul{
@@ -150,23 +158,45 @@ p {
 
 
 @media only screen and (max-width : 420px) and (orientation: portrait){
-    .primersection img{
-        width: 200px;
-        padding: 2px;
+    body{
+        padding: 0px
     }
-    .primersection {
+    .logo{
+        width: 130px;
+        height: 120px;
+        padding: 2px;
         display: flex;
-        border-style: none;
-        margin: 0%;
-        flex-direction: column;
+        align-items: center ;
     }
     .navegacion {
         margin: 0%;
-        width: 350px;
+        width: 250px;
         height: 85px;
+        display: flex;
+        margin: 0%;
+        flex-direction: column;
+        align-items: center;
+        border-style: none;
+    }
+    .busqueda {
+        display: flex;
+        align-items: center;
+        
     }
     .navegacion img{
         width: 30px;
+    }
+    .primersection ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        padding-inline-start: 0px;
+        height: fit-content;
+        font-size: 10px;
+        padding-top: 8px;
     }
     .primersection li {
         padding-right: 5px;
@@ -175,34 +205,56 @@ p {
 
     h1 {
         font-size: 25px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .banner {
-        border-style: none; 
         display: flex;
+        justify-content: center;
+        border-style: none; 
         flex-direction: column;
     }
     .banner img{
-        width: 360px;
+        display: flex;
+        justify-content: center;
+        width: 350px;
         padding-left: 3px;
         padding-right: 3px;
     }
-    /*ARREGLAS BOTONES */
+    .botones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0%;
+    }
+
     h2 {
+        display: flex;
+        justify-content: center;
         font-size: 25px;
     }
-    .banner p{
-        width: 300px;
-        font-size: 15px;
-        text-align: justify;
+    .banner p{   
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    font-size: 15px;
+    text-align: justify;
+
+    }
+    .banner ul{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .pelis {
+        display: flex;
+        justify-content: center;
+        border-style: double;
         text-align: center;
-        font-size: 25px;
+        font-size: 22px;
     }
     .peliculas img{
-        width: 250px;
+        width: 200px;
         justify-content: space-between;
     }
     .peliculas {
@@ -211,11 +263,14 @@ p {
         flex-direction: column;
     }
     .series1 {
+        display: flex;
+        justify-content: center;
+        border-style: double;
         text-align: center;
-        font-size: 25px;
+        font-size: 22px;
     }
     .series img{
-        width: 250px;
+        width: 200px;
         justify-content: space-between;
     }
     .series {
@@ -224,11 +279,14 @@ p {
         flex-direction: column;
     }
     .vistos {
+        display: flex;
+        justify-content: center;
+        border-style: double;
         text-align: center;
-        font-size: 25px;
+        font-size: 22px;
     }
     .masvistos img{
-        width: 250px;
+        width: 200px;
         justify-content: space-between;
     }
     .masvistos {
