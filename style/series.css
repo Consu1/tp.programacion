@@ -1,7 +1,8 @@
 body {
-    background-color: black;
+    background-color:black;
     font-family: 'Hind', sans-serif;
-    color: rgb(81, 113, 255);;
+    color:rgb(81, 113, 255);
+    padding: 15px;
 }
 .primersection {
     display: flex;
@@ -11,6 +12,7 @@ body {
     border-style: double;
     text-decoration: none;
     align-items: center;
+
 }
 .primersection ul {
     display: flex;
@@ -20,11 +22,13 @@ body {
     color: white;
     align-items: center;
     padding-inline-start: 0px;
+    padding-right: 15px;
 }
 .primersection li {
     padding-right: 15px;
     padding-left: 15px;
-  
+    text-decoration: none;
+    color: #ffffff;
 }
 .primersection a {
     text-decoration: none;
@@ -32,20 +36,24 @@ body {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 h1 {
     font-size: 24px;
-    color: white;
 }
 
 .banner {
-    display: flex;
+    border-style: none;
+    display: flex;  
     align-items: flex-start;
-    border-style: double;
     font-size: 22px;
 }
 .banner ul {
     list-style: none;
+}
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
 }
 .Reproducir {
     background-color: white;
@@ -56,9 +64,11 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    float: right ;margin-right: 65%;
+    float: right;
+    margin-right: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
- 
   
 .Vertrailer {
     background-color: white;
@@ -70,11 +80,10 @@ h1 {
     display: inline-block;
     font-size: 20px;
     text-align: right;
-}
-.descripcion {
-    border-style: double;
-}
+    padding-left: 25px;
+    padding-right: 25px;
 
+}
 h2 {
     font-size: 22px;
 }
@@ -85,7 +94,6 @@ h3 {
 p {
     color: azure;
 }
-
 .masvistos{
     display: flex;
     align-items: flex-start;
@@ -96,7 +104,7 @@ p {
 .masvistos p{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center;  
     font-size: medium;
 }
 
@@ -110,7 +118,7 @@ p {
 .populares p{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center;  
     font-size: medium;
 }
 
@@ -124,9 +132,10 @@ p {
 .parati p{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center;  
     font-size: medium;
 }
+
 .footer ul{
     display: flex;
     justify-content: space-evenly;
@@ -141,21 +150,35 @@ p {
     font-size: small;
 }
 
-@media only screen and (min-width : 420px) and (orientation: landscape){
-    
-    body {
-        background-color: black;
-        font-family: 'Hind', sans-serif;
-        color: rgb(81, 113, 255);
+
+@media only screen and (max-width : 420px) and (orientation: portrait){
+    body{
+        padding: 0px
     }
-    .primersection {
+    .logo{
+        width: 130px;
+        height: 120px;
+        padding: 2px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 5px;
-        border-style: double;
-        text-decoration: none;
+        align-items: center ;
+    }
+    .navegacion {
+        margin: 0%;
+        width: 250px;
+        height: 85px;
+        display: flex;
+        margin: 0%;
+        flex-direction: column;
         align-items: center;
+        border-style: none;
+    }
+    .busqueda {
+        display: flex;
+        align-items: center;
+        
+    }
+    .navegacion img{
+        width: 30px;
     }
     .primersection ul {
         display: flex;
@@ -165,124 +188,104 @@ p {
         color: white;
         align-items: center;
         padding-inline-start: 0px;
+        height: fit-content;
+        font-size: 10px;
+        padding-top: 8px;
     }
     .primersection li {
-        padding-right: 15px;
-        padding-left: 15px;
-      
+        padding-right: 5px;
+        padding-left: 5px;
     }
-    .primersection a {
-        text-decoration: none;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    
+
     h1 {
-        font-size: 24px;
-        color: white;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
     }
-    
+
     .banner {
         display: flex;
-        align-items: flex-start;
-        border-style: double;
-        font-size: 22px;
+        justify-content: center;
+        border-style: none; 
+        flex-direction: column;
     }
-    .banner ul {
-        list-style: none;
+    .banner img{
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        padding-left: 3px;
+        padding-right: 3px;
     }
-    .Reproducir {
-        background-color: white;
-        border: none;
-        color: blanco;
-        padding: 1px 2px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        float: right ;margin-right: 65%;
+    .botones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0%;
     }
-     
-      
-    .Vertrailer {
-        background-color: white;
-        border: none;
-        color: blanco;
-        padding: 1px 2px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        text-align: right;
-    }
-    .descripcion {
-        border-style: double;
-    }
-    
+
     h2 {
-        font-size: 22px;
-    }
-    
-    h3 {
-        font-size: 15px;
-    }
-    p {
-        color: azure;
-    }
-    
-    .masvistos{
         display: flex;
-        align-items: flex-start;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .banner p{   
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    font-size: 15px;
+    text-align: justify;
+
+    }
+    .banner ul{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .vistos {
+        display: flex;
+        justify-content: center;
+        border-style: double;
+        text-align: center;
         font-size: 22px;
+    }
+    .masvistos img{
+        width: 200px;
         justify-content: space-between;
     }
-    
-    .masvistos p{
+    .masvistos {
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        font-size: medium;
+        align-items: center;
+        flex-direction: column;
     }
-    
-    .populares{
+    .popularesenarg {
         display: flex;
-        align-items: flex-start;
+        justify-content: center;
+        border-style: double;
+        text-align: center;
         font-size: 22px;
+    }
+    .populares img{
+        width: 200px;
         justify-content: space-between;
     }
-    
-    .populares p{
+    .populares {
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        font-size: medium;
+        align-items: center;
+        flex-direction: column;
     }
-    
+    .recomendados {
+        display: flex;
+        justify-content: center;
+        border-style: double;
+        text-align: center;
+        font-size: 22px;
+    }
+    .parati img{
+        width: 200px;
+        justify-content: space-between;
+    }
     .parati {
         display: flex;
-        align-items: flex-start;
-        font-size: 22px;
-        justify-content: space-between;
-    }
-    
-    .parati p{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        font-size: medium;
-    }
-    .footer ul{
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        font-family: 'Hind', sans-serif;
-        color: lightgrey;
-    
-    }
-    
-    .footer li{
-        color: lightslategray;
-        font-size: small;
-    }  
+        align-items: center;
+        flex-direction: column;
+    }   
 }

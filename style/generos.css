@@ -1,7 +1,9 @@
 body {
     background-color:black;
     font-family: 'Hind', sans-serif;
-    color:rgb(81, 113, 255);;
+    color: rgb(81, 113, 255);
+    padding: 15px;
+
 }
 .primersection {
     display: flex;
@@ -11,9 +13,7 @@ body {
     border-style: double;
     text-decoration: none;
     align-items: center;
-
 }
-
 .primersection ul {
     display: flex;
     justify-content: space-between;
@@ -22,15 +22,14 @@ body {
     color: white;
     align-items: center;
     padding-inline-start: 0px;
-}
-
-.primersection li {
     padding-right: 15px;
-    padding-left: 15px;
+}
+.primersection li {
+    padding-right: 10px;
+    padding-left: 10px;
     text-decoration: none;
     color: #ffffff;
 }
-
 .primersection a {
     text-decoration: none;
     color: #ffffff;
@@ -42,9 +41,6 @@ h1 {
     font-size: 24px;
 }
 
-.banner {
-    border-style: double;
-}
 
 h2 {
     font-size: 22px;
@@ -113,119 +109,103 @@ p {
     font-size: small;
 }
 
-@media only screen and (min-width : 420px) and (orientation: landscape){
-    body {
-        background-color:black;
-        font-family: 'Hind', sans-serif;
-        color:rgb(81, 113, 255);
-    }
-    .primersection {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 5px;
-        border-style: double;
-        text-decoration: none;
-        align-items: center;
+@media only screen and (max-width : 420px) and (orientation: portrait){
+body{
+    padding: 0px
+}
+.logo{
+    width: 130px;
+    height: 120px;
+    padding: 2px;
+    display: flex;
+    align-items: center ;
+}
+.navegacion {
+    margin: 0%;
+    width: 250px;
+    height: 85px;
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+}
+.busqueda {
+    display: flex;
+    align-items: center;
     
-    }
-    
-    .primersection ul {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        text-decoration: none;
-        color: white;
-        align-items: center;
-        padding-inline-start: 0px;
-    }
-    
-    .primersection li {
-        padding-right: 15px;
-        padding-left: 15px;
-        text-decoration: none;
-        color: #ffffff;
-    }
-    
-    .primersection a {
-        text-decoration: none;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    
-    h1 {
-        font-size: 24px;
-    }
-    
-    .banner {
-        border-style: double;
-    }
-    
-    h2 {
-        font-size: 22px;
-    }
-    
-    h3 {
-        font-size: 15px;
-    }
-    p {
-        color: azure;
-    }
-    
-    .romanticas{
-        display: flex;
-        align-items: flex-start;
-        font-size: 22px;
-        justify-content: space-between;
-    }
-    
-    .romanticas p{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;  
-        font-size: medium;
-    }
-    
-    .accion{
-        display: flex;
-        align-items: flex-start;
-        font-size: 22px;
-        justify-content: space-between;
-    }
-    
-    .accion p{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;  
-        font-size: medium;
-    }
-    
-    .terror{
-        display: flex;
-        align-items: flex-start;
-        font-size: 22px;
-        justify-content: space-between; 
-    }
-    
-    .terror p{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;  
-        font-size: medium;
-    }
-    
-    .footer ul{
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        font-family: 'Hind', sans-serif;
-        color: lightgrey;
-    
-    }
-    
-    .footer li{
-        color: lightslategray;
-        font-size: small;
-    }
+}
+.navegacion img{
+    width: 30px;
+}
+.primersection ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    padding-inline-start: 0px;
+    height: fit-content;
+    font-size: 10px;
+    padding-top: 8px;
+}
+.primersection li {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.romanticas1 {
+    display: flex;
+    justify-content: center;
+    border-style: double;
+    text-align: center;
+    font-size: 22px;
+}
+.romanticas img{
+    width: 200px;
+    justify-content: space-between;
+}
+.romanticas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.accion1 {
+    display: flex;
+    justify-content: center;
+    border-style: double;
+    text-align: center;
+    font-size: 22px;
+}
+.accion img{
+    width: 200px;
+    justify-content: space-between;
+}
+.accion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.terror1 {
+    display: flex;
+    justify-content: center;
+    border-style: double;
+    text-align: center;
+    font-size: 22px;
+}
+.terror img{
+    width: 200px;
+    justify-content: space-between;
+}
+.terror {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 }
