@@ -1,5 +1,5 @@
 window.onload=function(){
-    fetch('https://api.themoviedb.org/3/movie/550?api_key=3640f935247830e9f54f567258e27a2b')
+    fetch('https://api.themoviedb.org/3/movie/550?api_key=cc55526ed6d9221ada36a41066b7c9ea')
 .then(function(response){
 return response.json();
 })
