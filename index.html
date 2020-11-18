@@ -26,9 +26,16 @@
                 <li> <a href="peliculas.html">Películas</a> </li>   
                 <li> <a href="generos.html">Géneros</a> </li>   
                 <li> <img src="img/usuario.jpg" width="50px"> </li>   
-               <div class="busqueda">
-                  <p> <input type="search" name="campobusqueda" autofocus></p>
-               </div>
+                <div class="derecha_header">
+                  <!-- buscador -->
+                  <nav class="uk-navbar-container" uk-navbar>
+                    <div class="conenedor_buscador">
+                      <form class="uk-search uk-search-navbar" action="resultados.html" method="get">
+                        <span id="SpanBusqueda" uk-search-icon></span>
+                        <input class="uk-search-input" type="search" placeholder="Search" name="busqueda">
+                      </form>
+                    </div>
+                  </nav>
            </ul>
 
         </section>
