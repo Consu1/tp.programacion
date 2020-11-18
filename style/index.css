@@ -48,6 +48,7 @@ h1 {
     align-items: flex-start;
     font-size: 22px;
 }
+
 /* << BARRA DE BUSQUEDA >> */
 header .uk-navbar-container {
     border-radius: 17px;
@@ -71,6 +72,7 @@ header .uk-navbar-container {
   }
 
      /*hasta aca*/
+
 
 .banner ul {
     list-style: none;
@@ -166,6 +168,7 @@ p {
     font-size: medium
 }
 
+/*
 .footer ul{
     display: flex;
     justify-content: space-evenly;
@@ -179,11 +182,70 @@ p {
     color: lightslategray;
     font-size: small;
 }
+/*
 
-.uk-slideshow ul {
-    list-style: none;
-}
 
+/* ---------- FOOTER ---------- */
+footer {
+    width: 100%;
+    background: gray;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  footer .DB {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 0.8rem;
+    margin: 2%;
+  }
+  
+  footer #logo {
+    width: 40%;
+    margin-top: 5%;
+  }
+  
+  footer .redes {
+    margin: 2%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  footer div a {
+    color: rgba(100, 100, 100, 0.8);
+    font-size: 1.1rem;
+  }
+  
+  footer .contacto p {
+    color: rgba(100, 100, 100, 0.8);
+    font-size: 1.1rem;
+  }
+  
+  /* hover */
+  footer a:hover {
+    color: red;
+    text-decoration: none;
+  }
+  
+  footer .contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 20%;
+  }
+  
+  footer .contacto p {
+    color: rgba(100, 100, 100, 0.8);
+  }
+  
+  footer .redes h2, .contacto h2 {
+    color: rgba(250, 250, 250, 0.67)
+  }
 
 
 @media only screen and (max-width : 420px) and (orientation: portrait){
