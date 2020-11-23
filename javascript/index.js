@@ -14,6 +14,7 @@ console.log(data);
 console.log('El error fué: ' + error);
 })
 
+/* no tocar lo sigunte*/
 
    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=cc55526ed6d9221ada36a41066b7c9ea&language=en-US&page=1`)
 .then(function(response){
@@ -49,7 +50,7 @@ console.log(data);
 console.log('El error fué: ' + error);
 })
 
-
+/*hasta aca*/
 
 
 
