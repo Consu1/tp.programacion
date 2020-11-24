@@ -20,15 +20,13 @@ return response.json();
 .then(function(data){
 console.log(data);
 
-
+var contenidoQueQuieroMostrar = " ;"
 
    for (let i = 0; i < data.results.length; i++) {
        var movie = data.results[i];
 
     
-       var contenidoQueQuieroMostrar = document.querySelector(“div.peliculas”).innerHTML;
-
-       contenidoQueQuieroMostrar = 
+       contenidoQueQuieroMostrar = document.querySelector(`.peliculas`).innerHTML
     `<h2 class="peliculas">Películas</h2>
         
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>

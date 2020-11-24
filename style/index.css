@@ -1,3 +1,42 @@
+
+header {
+    background: rgba(0, 0, 8, 0.85);
+    position: fixed;
+    z-index: 999;
+    /* para que este arriba de todo */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Izquierda */
+  header .izquierda_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55%;
+    flex-wrap: wrap;
+  }
+  
+  header .a_logo {
+    width: 20%;
+    margin: 2%;
+  }
+  
+  header .a_logo .logo {
+    opacity: 1;
+    width: 100%;
+  }
+  
+  header .izquierda_header nav ul li:hover a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
 body {
     background-color:black;
     font-family: 'Hind', sans-serif;
