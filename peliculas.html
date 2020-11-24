@@ -15,24 +15,96 @@
 </head>
 <body>
     <header>
-        <section class="primersection">
-            <ul class="logo">
-                <li>  <img src="img/Logo.jpg" alt="logo" width="130px" height="120"> </li>
+        <!-- IZQUIERA -->
+        <div class="izquierda_header">
+          <!-- logo -->
+          <a class="a_logo" href="index.html"><img class="logo" src="img/logo.JPG" width="20px" alt=""></a>
+          <!-- Hiperviculos -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" name="" value="">
+          <nav id="hamburguesa">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="peliculas.html">Peliculas</a></li>
+              <li><a href="Series.html">Series</a></li>
+              <li><a href="generos.html">Generos</a></li>
             </ul>
-           
-            <ul class="navegacion">
-                <li> <a href="index.html">Inicio</a> </li> 
-                <li> <a href="series.html">Series</a> </li>     
-                <li> <a href="generos.html">Géneros</a> </li>   
-                <li> <img src="img/usuario.jpg" width="50px"> </li>   
-                <div class="busqueda">
-                    <p> <input type="search" name="campobusqueda" autofocus></p>
-                </div>
-           </ul>
-
-        </section>
-  
-    </header>
+          </nav>
+    
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span> <i class="fas fa-bars"></i></span>
+          </label>
+        </div>
+    
+        <!-- DERECHA-->
+        <div class="derecha_header">
+          <!-- buscador -->
+          <nav class="uk-navbar-container" uk-navbar>
+            <div class="conenedor_buscador">
+              <form class="uk-search uk-search-navbar" action="resultados.html" method="get">
+                <span id="SpanBusqueda" uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Search" name="busqueda">
+              </form>
+            </div>
+          </nav>
+          <!-- MODAL Avanzada-->
+          <a id="avanzada" href="#modal-avan" uk-toggle>Avanzada</a>
+          <div id="modal-avan" uk-modal>
+            <div id="modal_avanzada" class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Ingrese su búsqueda</h2>
+              <form class="avana" action="avanzado.html" method="get">
+                <label for="generos">Elige el género que deseas buscar:</label>
+                <select class="incluir" name="incluir">
+                  <option value="">Ninguno</option>
+                  <!-- api generos -->
+                </select>
+    
+                <label for="">Género que desea excluir</label>
+                <select class="excluir" name="excluir">
+                  <option value="">Ninguno</option>
+                  <!-- api generos -->
+                </select>
+    
+                <label for="">Órden de resultados:</label>
+                <select class="orden" name="orden">
+                  <option value="vote_average.desc">Mayor cantidad de votos</option>
+                  <option value="popularity.desc">Popularidad</option>
+                  <option value="first_air_date.desc">Primera vez al aire</option>
+                </select>
+    
+                <label for="año">Año de estreno:</label>
+                <input type="number" name="año" value="" placeholder="2019">
+    
+                <button class="uk-button uk-button-default uk-modal-close" type="Cancel">Cancelar</button>
+                <button class="uk-button uk-button-primary" type="Search">Buscar</button>
+              </form>
+            </div>
+          </div>
+    
+          <!-- logeo de usuario -->
+          <a id="corazón" href="favoritos.html"><img src="img/corazon.png" width="45px" alt=""> </a>
+          <a id="a_usuario" href="#modal-usuario" uk-toggle><img src="img/usuario.png" width="45px" alt=""> </a>
+          <div class="logedIn">
+            <p id="p_nombre"></p>
+            <button id="logOut"type="button" name="button">Log Out</button>
+          </div>
+          <div id="modal-usuario" uk-modal>
+            <div id="modal_usuario" class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Ingrese sus datos</h2>
+              <form class="LogIn" action="index.html" method="get">
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" name="nombre" value="" placeholder="AbrilNiell123">
+                <label for="">Correo electrónico:</label>
+                <input type="text" name="email" value="" placeholder="abrilniel123@gmail.com">
+                <p class="uk-text-right">
+                  <button class="uk-button uk-button-default uk-modal-close" type="Cancel">Cancelar</button>
+                  <button class="uk-button uk-button-primary" type="submit">Enviar</button>
+                </p>
+              </form>
+            </div>
+          </div>
+    
+        </div>
+      </header>
 
     <h1>Peliculas</h1>
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
