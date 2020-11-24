@@ -1,8 +1,5 @@
 window.onload=function(){
     
-    var apiKey = "cc55526ed6d9221ada36a41066b7c9ea"
-
-
     fetch(`https://api.themoviedb.org/3/movie/550?api_key=${apiKey}`)
 .then(function(response){
 return response.json();
@@ -34,10 +31,10 @@ console.log(data);
     <div>
         <div class="uk-card uk-card-default uk-card-body">
             <h3 class="uk-card-title">${movie.title}</h3>
-            <p>${movie.title}</p>
-            <img src="${movie.poster_path}">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-    </div>`
+    </div>
+</div>`
 
    };
 

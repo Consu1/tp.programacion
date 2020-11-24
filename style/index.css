@@ -247,10 +247,14 @@ footer {
     color: rgba(250, 250, 250, 0.67)
   }
 
-  .uk-position-relative{
-    display: flex;
-    height: 500px;
-  }
+ 
+  
+
+
+
+
+
+
 
 @media only screen and (max-width : 420px) and (orientation: portrait){
     body{
