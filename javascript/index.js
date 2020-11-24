@@ -21,26 +21,40 @@ return response.json();
 console.log(data);
 
 
-  var contenidoQueQuieroMostrar = '';
 
    for (let i = 0; i < data.results.length; i++) {
        var movie = data.results[i];
 
-       contenidoQueQuieroMostrar += 
-    `<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">
-            <h3 class="uk-card-title">${movie.title}</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-    </div>
-</div>`
+    
+       var contenidoQueQuieroMostrar = document.querySelector(“div.peliculas”).innerHTML;
+
+       contenidoQueQuieroMostrar = 
+    `<h2 class="peliculas">Películas</h2>
+        
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+     <div>
+         <div class="uk-card uk-card-default uk-card-body">
+             <h3 class="uk-card-title"></h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         </div>
+     </div>
+     <div>
+         <div class="uk-card uk-card-primary uk-card-body">
+             <h3 class="uk-card-title">Primary</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         </div>
+     </div>
+     <div>
+         <div class="uk-card uk-card-secondary uk-card-body">
+             <h3 class="uk-card-title">Secondary</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         </div>
+     </div>
+ </div>`
 
    };
 
-   var contenedorDePeliculas = document.querySelector('#contenedor-peliculas');
-
-   contenedorDePeliculas.innerHTML = contenidoQueQuieroMostrar;
+ 
 
 })
 .catch(function(error){
