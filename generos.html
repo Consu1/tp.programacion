@@ -5,113 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/generos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
     <title>Generos</title>
     
 </head>
 <body>
     <header>
-        <section class="primersection">
-            <ul class="logo">
-                <li>  <img src="img/Logo.jpg" alt="logo" width="130px" height="120"> </li>
-            </ul>
-           
-            <ul class="navegacion">
-                <li> <a href="index.html">Inicio</a> </li>   
-                <li> <a href="series.html">Series</a> </li>   
-                <li> <a href="peliculas.html">Películas</a> </li>   
-                <li> <img src="img/usuario.jpg" width="50px"> </li>   
-                <div class="busqueda">
-                    <p> <input type="search" name="campobusqueda" autofocus></p>
-                </div>
-           </ul>
-
-        </section>
-  
-    </header>
-    
-    <h2 class="romanticas1">Románticas</h2>
-    <div class="romanticas">
-        <div>
-            <img src="img/pelicula2.jpg" width="245px">
-            <p>El origen</p>
-        </div>
-        <div>
-            <img src="img/serie2.jpg" width="245px">
-            <p>Gossip girl</p>
-        </div>
-        <div>
-            <img src="img/pelicula6.jpg" width="245px">
-            <p>La máscara</p>
-        </div>
-        <div>
-            <img src="img/pelicula 4.jpg" width="245px">
-            <p>Peach perfect</p>
-        </div>
-        <div>
-            <img src="img/pelicula5.jpg" width="245px"> 
-            <p>Mean girls</p>
-        </div>  
-    </div>
-
-    <h2 class="accion1">Acción</h2>
-    <div class="accion">
-        <div>
-            <img src="img/pelicula2.jpg" width="245px">
-            <p>El origen</p>
-        </div>
-        <div>
-            <img src="img/serie2.jpg" width="245px">
-            <p>Gossip girl</p>
-        </div>
-        <div>
-            <img src="img/pelicula6.jpg" width="245px">
-            <p>La máscara</p>
-        </div>
-        <div>
-            <img src="img/pelicula 4.jpg" width="245px">
-            <p>Peach perfect</p>
-        </div>
-        <div>
-            <img src="img/pelicula5.jpg" width="245px"> 
-            <p>Mean girls</p>
-        </div>   
-    </div>
-
-    <h2 class="terror1">Terror</h2>
-    <div class="terror">
-        <div>
-            <img src="img/pelicula2.jpg" width="245px">
-            <p>El origen</p>
-        </div>
-        <div>
-            <img src="img/serie2.jpg" width="245px">
-            <p>Gossip girl</p>
-        </div>
-        <div>
-            <img src="img/pelicula6.jpg" width="245px">
-            <p>La máscara</p>
-        </div>
-        <div>
-            <img src="img/pelicula 4.jpg" width="245px">
-            <p>Peach perfect</p>
-        </div>
-        <div>
-            <img src="img/pelicula5.jpg" width="245px"> 
-            <p>Mean girls</p>
-        </div>   
-    </div>
-    
-
-<br>
-<br>
-
-        <div class="footer">
+        <!-- IZQUIERA -->
+        <div class="izquierda_header">
+          <!-- logo -->
+          <a class="a_logo" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+          <!-- Hiperviculos -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" name="" value="">
+          <nav id="hamburguesa">
             <ul>
-                <li>Consuelo Perrone</li>
-                <li>Abril Niell</li>
-                <li>Eugenia Garcia Borghes</li>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="peliculas.html">Peliculas</a></li>
+              <li><a href="Series.html">Series</a></li>
+              <li><a href="generos.html">Generos</a></li>
             </ul>
-         </div> 
+          </nav>
+    
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span> <i class="fas fa-bars"></i></span>
+          </label>
+        </div>
+    
+        <!-- DERECHA-->
+        <div class="derecha_header">
+          <!-- buscador -->
+          <nav class="uk-navbar-container" uk-navbar>
+            <div class="conenedor_buscador">
+              <form class="uk-search uk-search-navbar" action="resultados.html" method="get">
+                <span id="SpanBusqueda" uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Search" name="busqueda">
+              </form>
+            </div>
+          </nav>
+          <!-- MODAL Avanzada-->
+          <a id="avanzada" href="#modal-avan" uk-toggle>Avanzada</a>
+          <div id="modal-avan" uk-modal>
+            <div id="modal_avanzada" class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Ingrese su búsqueda</h2>
+              <form class="avana" action="avanzado.html" method="get">
+                <label for="generos">Elige el género que deseas buscar:</label>
+                <select class="incluir" name="incluir">
+                  <option value="">Ninguno</option>
+                  <!-- api generos -->
+                </select>
+    
+                <label for="">Género que desea excluir</label>
+                <select class="excluir" name="excluir">
+                  <option value="">Ninguno</option>
+                  <!-- api generos -->
+                </select>
+    
+                <label for="">Órden de resultados:</label>
+                <select class="orden" name="orden">
+                  <option value="vote_average.desc">Mayor cantidad de votos</option>
+                  <option value="popularity.desc">Popularidad</option>
+                  <option value="first_air_date.desc">Primera vez al aire</option>
+                </select>
+    
+                <label for="año">Año de estreno:</label>
+                <input type="number" name="año" value="" placeholder="2019">
+    
+                <button class="uk-button uk-button-default uk-modal-close" type="Cancel">Cancelar</button>
+                <button class="uk-button uk-button-primary" type="Search">Buscar</button>
+              </form>
+            </div>
+          </div>
+    
+          <!-- logeo de usuario -->
+          <a id="corazón" href="favoritos.html"><img src="img/corazon.png" width="45px" alt=""> </a>
+          <a id="a_usuario" href="#modal-usuario" uk-toggle><img src="img/usuario.png" width="45px" alt=""> </a>
+          <div class="logedIn">
+            <p id="p_nombre"></p>
+            <button id="logOut"type="button" name="button">Log Out</button>
+          </div>
+          <div id="modal-usuario" uk-modal>
+            <div id="modal_usuario" class="uk-modal-dialog uk-modal-body">
+              <h2 class="uk-modal-title">Ingrese sus datos</h2>
+              <form class="LogIn" action="index.html" method="get">
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" name="nombre" value="" placeholder="AbrilNiell123">
+                <label for="">Correo electrónico:</label>
+                <input type="text" name="email" value="" placeholder="abrilniell123@gmail.com">
+                <p class="uk-text-right">
+                  <button class="uk-button uk-button-default uk-modal-close" type="Cancel">Cancelar</button>
+                  <button class="uk-button uk-button-primary" type="submit">Enviar</button>
+                </p>
+              </form>
+            </div>
+          </div>
+    
+        </div>
+      </header>
+
+               <!--ROMANTICAS-->
+
+               <h2 class="Romanticas">Romanticas</h2>
+        
+               <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title"></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-primary uk-card-body">
+                        <h3 class="uk-card-title">Primary</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3 class="uk-card-title">Secondary</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+           
+           
+           
+           <!--TERROR-->
+           
+           <h2 class="Terror">Terror</h2>
+           
+           <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+           <div>
+               <div class="uk-card uk-card-default uk-card-body">
+                   <h3 class="uk-card-title">Default</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+               </div>
+           </div>
+           <div>
+               <div class="uk-card uk-card-primary uk-card-body">
+                   <h3 class="uk-card-title">Primary</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+               </div>
+           </div>
+           <div>
+               <div class="uk-card uk-card-secondary uk-card-body">
+                   <h3 class="uk-card-title">Secondary</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+               </div>
+           </div>
+           </div>
+           
+           <!--ACCIÓN-->
+           
+           <h2 class="Accion">Accion</h2>
+               
+           <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+           <div>
+             <div class="uk-card uk-card-default uk-card-body">
+                 <h3 class="uk-card-title"></h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+             </div>
+           </div>
+           <div>
+             <div class="uk-card uk-card-primary uk-card-body">
+                 <h3 class="uk-card-title">Primary</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+             </div>
+           </div>
+           <div>
+             <div class="uk-card uk-card-secondary uk-card-body">
+                 <h3 class="uk-card-title">Secondary</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+             </div>
+           </div>
+           </div>
+             
+
+
+    
+
+   <!-- FOOTER -->
+   <footer>
+    <div class="DB">
+      <a href="https://www.themoviedb.org/"><img id="logo" src="img/legal.png" width="7px" alt=""></a>
+ 
+      <p>The Movie Database (TMDb) is a community built movie and TV database. Every piece of data has been added by our amazing community dating back to 2008. TMDb's strong international focus and breadth of data is largely unmatched and something
+        we're incredibly proud of. Put simply, we live and breathe community and that's precisely what makes us different.
+      </p>
+    </div>
+    <div class="redes">
+      <h2>Seguinos en las redes</h2>
+ 
+      <p><a href="https://www.instagram.com/consuperrone/?hl=es-la">Consuelo Perrone</a></p>
+      <p><a href="https://www.instagram.com/eugeniaborghes/?hl=es-la">Eugenia Borghes<a></p>
+      <p><a href="https://www.instagram.com/abriniell/?hl=es-la">Abril Niell</a> </p>
+    </div>
+    <div class="contacto">
+      <h2>Contacto</h2>
+ 
+      <p>Cperronellavar@udesa.edu.ar</p>
+      <p>Egarciaborghes@udesa.edu.ar</p>
+      <p>Aniellpeña@udesa.edu.ar</p>
+    </div>
+  </footer>
 
 </body>
 </html>

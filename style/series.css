@@ -1,3 +1,196 @@
+
+/*---------- HEADER -----------*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+/* estilo de navegacion */
+header {
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  z-index: 999;
+  /* para que este arriba de todo */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Izquierda */
+header .izquierda_header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 55%;
+  flex-wrap: wrap;
+}
+
+header .a_logo {
+  width: 20%;
+  margin: 2%;
+}
+
+header .a_logo .logo {
+  opacity: 1;
+  width: 100%;
+}
+
+header .izquierda_header nav ul li:hover a {
+  color:rgb(81, 113, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#nav-toggle {
+  display: none;
+  text-decoration: none;
+}
+
+.izquierda_header ul {
+  display: flex;
+}
+
+.izquierda_header ul li {
+  margin-left: 1em;
+}
+
+.izquierda_header ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+/* Derecha */
+header .derecha_header {
+  display: flex;
+  justify-content: flex-end;
+  width: 45%;
+  align-items: center;
+}
+
+/* << BARRA DE BUSQUEDA >> */
+header .uk-navbar-container {
+  border-radius: 17px;
+  width: 50%;
+  margin-bottom: 4%;
+}
+
+header .uk-search-input {
+  width: 71%;
+  ;
+}
+
+.derecha_header nav .conenedor_buscador form {
+  width: 200px;
+  /* achico el width de 400 a 200 porque interferia con el hover de Avanzada */
+}
+
+.derecha_header nav .conenedor_buscador form input {
+  border-radius: 17px;
+  font-size: 1.4rem;
+}
+
+/* modal BUSQUEDA*/
+#avanzada {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 3%;
+}
+
+header .derecha_header #avanzada:hover {
+  color: rgb(81, 113, 255);;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#modal_avanzada {
+  background-color: #333;
+  border-radius: 20px;
+}
+
+#modal_avanzada form {
+  display: flex;
+  flex-direction: column;
+}
+
+#modal_avanzada form label {
+  font-size: 1.2rem;
+}
+
+#modal_avanzada h2 {
+  color: white;
+  text-align: center;
+}
+
+/* ESTILO BUSCADOR AVANZADO */
+#modal_avanzada form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#modal_avanzada form select:hover {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-color: rgb(81, 113, 255);;
+  box-sizing: border-box;
+}
+
+#modal_avanzada form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#modal_avanzada form input:hover {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-color: rgb(81, 113, 255);;
+  box-sizing: border-box;
+}
+
+#modal_avanzada form button[type=cancel] {
+  color: white;
+  margin: 8px 0;
+  background-color: rgb(81, 113, 255);;
+  border: 0px;
+  font-weight: bold;
+}
+
+#modal_avanzada form button[type=cancel]:hover {
+  background-color: #rgb(81, 113, 255);;
+}
+
+#modal_avanzada form button[type=Search] {
+  color: white;
+  margin: 8px 0;
+  background-color: rgb(81, 113, 255);;
+  border: 0px;
+  font-weight: bold;
+}
+
+#modal_avanzada form button[type=Search]:hover {
+  background-color: rgb(81, 113, 255);;
+}
+
+/* TERMINA ESTILO BUSCADOR AVANZADO */
+  
 body {
     background-color:black;
     font-family: 'Hind', sans-serif;
