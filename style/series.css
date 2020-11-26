@@ -1,5 +1,5 @@
 
-/*---------- HEADER -----------*/
+
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 /* estilo de navegacion */
@@ -89,7 +89,69 @@ header .uk-search-input {
   font-size: 1.4rem;
 }
 
+.fondomasvistos {
+  background-color: rgb(245, 241, 241);
+  height: 355px;
+}
 
+.masvistos li img {
+  width: 240px;
+  height: 340px;
+  padding-top: 10px;
+  margin-left: 55px;
+  
+}
+
+.titulomasvistos {
+  color: rgb(128, 124, 124) !important;
+  font-size: 20px !important;
+  margin-top: 20px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.fondopopularesenarg {
+  background-color: rgb(245, 241, 241);
+  height: 355px;
+}
+
+.popenarg li img {
+  width: 240px;
+  height: 340px;
+  padding-top: 10px;
+  margin-left: 55px;
+}
+
+.titulopopularesenarg {
+  color: rgb(128, 124, 124) !important;
+  font-size: 20px !important;
+  margin-top: 20px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.fondorecomendadoparati {
+  background-color: rgb(245, 241, 241);
+  height: 355px;
+}
+
+.recparati li img {
+  width: 240px;
+  height: 340px;
+  padding-top: 10px;
+  margin-left: 55px;
+}
+
+.titulorecomendadoparati {
+  color: rgb(128, 124, 124) !important;
+  font-size: 20px !important;
+  margin-top: 20px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
   
 body {
     background-color:black;
