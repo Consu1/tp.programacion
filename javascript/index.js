@@ -1,4 +1,4 @@
-window.onload=function(){
+/*window.onload=function(){
 
     var apiKey= 'cc55526ed6d9221ada36a41066b7c9ea';
     fetch(`https://api.themoviedb.org/3/tv/on_the_air?api_key=${apiKey}&language=en-US&page=1`)
@@ -27,9 +27,9 @@ window.onload=function(){
             console.log('El error fue: ' + error);
         })
 
+    */
     
-    
-    /*    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
+       fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
 .then(function(response){
 return response.json();
 })
@@ -59,5 +59,5 @@ console.log(data);
 .catch(function(error){
 console.log('El error fue: ' + error);
 })
-*/
+
 }

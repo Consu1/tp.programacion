@@ -22,6 +22,49 @@
   font-weight: bold;
   padding-left: 10px;
 }
+
+.fondoseries {
+  background-color: rgb(245, 241, 241);
+  height: 355px;
+}
+
+.series li img {
+  width: 240px;
+  height: 340px;
+  padding-top: 10px;
+  margin-left: 55px;
+}
+
+.tituloseries {
+  color: rgb(128, 124, 124) !important;
+  font-size: 20px !important;
+  margin-top: 20px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.fondomasvistos {
+  background-color: rgb(245, 241, 241);
+  height: 355px;
+}
+
+.masvistos li img {
+  width: 240px;
+  height: 340px;
+  padding-top: 10px;
+  margin-left: 55px;
+}
+
+.titulomasvistos {
+  color: rgb(128, 124, 124) !important;
+  font-size: 20px !important;
+  margin-top: 20px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
 .header {
   background: rgba(0, 0, 0, 0.85);
   position: fixed;
