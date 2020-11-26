@@ -1,4 +1,66 @@
-/*---------- HEADER -----------*/
+.fondomasvistos {
+  background-color: rgb(245, 241, 241);
+  height: 355px;
+}
+
+.masvistos li img {
+  width: 240px;
+  height: 340px;
+  padding-top: 10px;
+  margin-left: 55px;
+  
+}
+
+.titulomasvistos {
+  color: rgb(128, 124, 124) !important;
+  font-size: 20px !important;
+  margin-top: 20px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.fondopopularesenarg {
+  background-color: rgb(245, 241, 241);
+  height: 355px;
+}
+
+.popenarg li img {
+  width: 240px;
+  height: 340px;
+  padding-top: 10px;
+  margin-left: 55px;
+}
+
+.titulopopularesenarg {
+  color: rgb(128, 124, 124) !important;
+  font-size: 20px !important;
+  margin-top: 20px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.fondorecomendadoparati {
+  background-color: rgb(245, 241, 241);
+  height: 355px;
+}
+
+.recparati li img {
+  width: 240px;
+  height: 340px;
+  padding-top: 10px;
+  margin-left: 55px;
+}
+
+.titulorecomendadoparati {
+  color: rgb(128, 124, 124) !important;
+  font-size: 20px !important;
+  margin-top: 20px !important;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 /* estilo de navegacion */
@@ -89,106 +151,7 @@ header .uk-search-input {
 }
 
 /* modal BUSQUEDA*/
-#avanzada {
-  color: white;
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin: 3%;
-}
 
-header .derecha_header #avanzada:hover {
-  color: rgb(81, 113, 255);;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#modal_avanzada {
-  background-color: #333;
-  border-radius: 20px;
-}
-
-#modal_avanzada form {
-  display: flex;
-  flex-direction: column;
-}
-
-#modal_avanzada form label {
-  font-size: 1.2rem;
-}
-
-#modal_avanzada h2 {
-  color: white;
-  text-align: center;
-}
-
-/* ESTILO BUSCADOR AVANZADO */
-#modal_avanzada form select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-#modal_avanzada form select:hover {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-color: rgb(81, 113, 255);;
-  box-sizing: border-box;
-}
-
-#modal_avanzada form input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-#modal_avanzada form input:hover {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-color: rgb(81, 113, 255);;
-  box-sizing: border-box;
-}
-
-#modal_avanzada form button[type=cancel] {
-  color: white;
-  margin: 8px 0;
-  background-color: rgb(81, 113, 255);;
-  border: 0px;
-  font-weight: bold;
-}
-
-#modal_avanzada form button[type=cancel]:hover {
-  background-color: #rgb(81, 113, 255);;
-}
-
-#modal_avanzada form button[type=Search] {
-  color: white;
-  margin: 8px 0;
-  background-color: rgb(81, 113, 255);;
-  border: 0px;
-  font-weight: bold;
-}
-
-#modal_avanzada form button[type=Search]:hover {
-  background-color: rgb(81, 113, 255);;
-}
-
-/* TERMINA ESTILO BUSCADOR AVANZADO */
   
 
 body {
@@ -257,7 +220,7 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    float: right;
+    
     margin-right: 40px;
     padding-left: 25px;
     padding-right: 25px;
