@@ -89,10 +89,15 @@ header .uk-search-input {
 
 /* modal BUSQUEDA*/
 
+
+
 .fondopeliculas {
   background-color: rgb(245, 241, 241);
   height: 355px;
 }
+
+
+
 
 .pelis li img {
   width: 240px;
@@ -110,6 +115,14 @@ header .uk-search-input {
   font-weight: bold;
   padding-left: 10px;
 }
+
+.todopeliculas {
+  display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+
+}
+
 
 .fondoseries {
   background-color: rgb(245, 241, 241);
