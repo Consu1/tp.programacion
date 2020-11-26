@@ -50,7 +50,7 @@ console.log(data);
 
 }
 
-    var contenedorDePeliculas = document.querySelector('.peliculas');
+    var contenedorDePeliculas = document.querySelector('.todopeliculas');
 
     contenedorDePeliculas.innerHTML = contenidoQueQuieroMostrar;
 
@@ -60,4 +60,3 @@ console.log(data);
 console.log('El error fue: ' + error);
 })
 
-}
