@@ -1,12 +1,12 @@
-window.onload = function() {
+window.onload = function () {
 
 
   console.log("Hola ");
   fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=cc55526ed6d9221ada36a41066b7c9ea&language=en-US")
-    .then(function(respuesta) {
+    .then(function (respuesta) {
       return respuesta.json();
     })
-    .then(function(datos) {
+    .then(function (datos) {
       console.log(datos);
       var buscador = document.querySelector(".avana");
       var label1 = document.querySelector(".incluir");
@@ -33,7 +33,7 @@ window.onload = function() {
   console.log(option1Selected);
 
 
-  form.onsubmit = function(event) {
+  form.onsubmit = function (event) {
     if (select1.options[select1.selectedIndex].value == 0 && select2.options[select2.selectedIndex].value == 0 && input.value == "") {
       event.preventDefault();
       UIkit.notification({

@@ -1,15 +1,15 @@
-window.addEventListener("load", function(){
-    //Paso 1: Leo Storage
-    var recuperoStorageTarde = localStorage.getItem("seriesFavoritosTarde");
-    console.log(recuperoStorageTarde);
-  
-    // hago que no se pueda ver si no estan logeados
-    var nombreUsuario = localStorage.getItem("nombre");
-    console.log(nombreUsuario);
-  
-    if (nombreUsuario == "" || nombreUsuario == null) {
-      //no es necesario poner codigo aca
-    }else {
+window.addEventListener("load", function () {
+  //Paso 1: Leo Storage
+  var recuperoStorageTarde = localStorage.getItem("seriesFavoritosTarde");
+  console.log(recuperoStorageTarde);
+
+  // hago que no se pueda ver si no estan logeados
+  var nombreUsuario = localStorage.getItem("nombre");
+  console.log(nombreUsuario);
+
+  if (nombreUsuario == "" || nombreUsuario == null) {
+    //no es necesario poner codigo aca
+  } else {
     // Si todavía no tenía gifs favoritos
     if (recuperoStorageTarde == null) {
       // Creo una lista vacia
@@ -19,13 +19,13 @@ window.addEventListener("load", function(){
       seriesFavoritosTarde = JSON.parse(recuperoStorageTarde);
     }
     for (var i = 1; i < seriesFavoritosTarde.length; i++) {
-  
+
       // BUSCAR ESE GIF Y MOSTRARLO
       fetch("https://api.themoviedb.org/3/tv/" + seriesFavoritosTarde[i] + "?api_key=cc55526ed6d9221ada36a41066b7c9ea&language=en-US")
-        .then(function(response) {
+        .then(function (response) {
           return response.json();
         })
-        .then(function(serie) {
+        .then(function (serie) {
           console.log(serie)
           if (serie.poster_path == null) {
             var foto = document.querySelector('#mas');
@@ -36,4 +36,5 @@ window.addEventListener("load", function(){
           document.querySelector('.tarde').style = "display:block"
         })
     }
-}
+  }
+})

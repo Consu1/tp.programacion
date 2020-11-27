@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   var queryString = location.search; //Capturamos la query string del navegador
 
   var searchParams = new URLSearchParams(queryString); //Obtenemos las posiciones y los datos de la queryString
@@ -37,10 +37,10 @@ window.addEventListener("load", function() {
 
     console.log(url);
     fetch(url)
-      .then(function(respuesta) {
+      .then(function (respuesta) {
         return respuesta.json();
       })
-      .then(function(datos) {
+      .then(function (datos) {
         var destino = document.querySelector(".resultados");
         var datosFinales = datos.results;
         var titulo = document.querySelector(".primero");
