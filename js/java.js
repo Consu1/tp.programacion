@@ -26,7 +26,7 @@ window.addEventListener("load", function() {
       })
       .then(function(datos) {
         console.log(datos);
-        var sliderUl = document.querySelector("#series");
+        var sliderUl = document.querySelector("#mayorpuntaje");
         var pel = datos.results;
   
         for (var i = 0; i < pel.length; i++) {

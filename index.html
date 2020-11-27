@@ -36,7 +36,7 @@
       <nav id="hamburguesa">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li class="descubrir"><a href="">Descubrir</a></li>
+          <li class=""><a href="favoritos.html">Favoritos</a></li>
           <li><a href="generos.html">Genero</a></li>
         </ul>
       </nav>
@@ -57,42 +57,9 @@
           </form>
         </div>
       </nav>
-      <!-- MODAL Avanzada-->
-      <a id="avanzada" href="#modal-avan" uk-toggle>Avanzada</a>
-      <div id="modal-avan" uk-modal>
-        <div id="modal_avanzada" class="uk-modal-dialog uk-modal-body">
-          <h2 class="uk-modal-title">Ingrese su búsqueda</h2>
-          <form class="avana" action="avanzado.html" method="get">
-            <label for="generos">Elige el género que deseas buscar:</label>
-            <select class="incluir" name="incluir">
-              <option value="">Ninguno</option>
-              <!-- api generos -->
-            </select>
-
-            <label for="">Género que desea excluir</label>
-            <select class="excluir" name="excluir">
-              <option value="">Ninguno</option>
-              <!-- api generos -->
-            </select>
-
-            <label for="">Órden de resultados:</label>
-            <select class="orden" name="orden">
-              <option value="vote_average.desc">Mayor cantidad de votos</option>
-              <option value="popularity.desc">Popularidad</option>
-              <option value="first_air_date.desc">Primera vez al aire</option>
-            </select>
-
-            <label for="año">Año de estreno:</label>
-            <input type="number" name="año" value="" placeholder="2020">
-
-            <button class="uk-button uk-button-default uk-modal-close" type="Cancel">Cancelar</button>
-            <button class="uk-button uk-button-primary" type="Search">Buscar</button>
-          </form>
-        </div>
-      </div>
-
+      
       <!-- MOdal del usuario -->
-      <a id="corazón" href="favoritos.html"><img src="img/corazon.png" alt=""> </a>
+     
       <a id="a_usuario" href="#modal-usuario" uk-toggle><img src="img/usuario.png" alt=""> </a>
       <div class="logedIn">
         <p id="p_nombre"></p>
@@ -138,7 +105,7 @@
 
     </div>
     <!-- Mayor puntaje -->
-    <h2 id="titulos">Mayor puntaje</h2>
+    <h2 id="titulos">Series</h2>
     <div uk-slider="autoplay: true autoplay-interval:1000 pause-on-hover: true">
 
       <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">

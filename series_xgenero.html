@@ -31,7 +31,7 @@
       <nav id="hamburguesa">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li class="descubrir"><a href="">Descubrir</a></li>
+          <li class=""><a href="favoritos.html">Favoritos</a></li>
           <li><a href="generos.html">Genero</a></li>
         </ul>
       </nav>
@@ -52,42 +52,9 @@
           </form>
         </div>
       </nav>
-      <!-- MODAL Avanzada-->
-      <a id="avanzada" href="#modal-avan" uk-toggle>Avanzada</a>
-      <div id="modal-avan" uk-modal>
-        <div id="modal_avanzada" class="uk-modal-dialog uk-modal-body">
-          <h2 class="uk-modal-title">Ingrese su búsqueda</h2>
-          <form class="avana" action="avanzado.html" method="get">
-            <label for="generos">Elige el género que deseas buscar:</label>
-            <select class="incluir" name="incluir">
-              <option value="">Ninguno</option>
-              <!-- api generos -->
-            </select>
-
-            <label for="">Género que desea excluir</label>
-            <select class="excluir" name="excluir">
-              <option value="">Ninguno</option>
-              <!-- api generos -->
-            </select>
-
-            <label for="">Órden de resultados:</label>
-            <select class="orden" name="orden">
-              <option value="vote_average.desc">Mayor cantidad de votos</option>
-              <option value="popularity.desc">Popularidad</option>
-              <option value="first_air_date.desc">Primera vez al aire</option>
-            </select>
-
-            <label for="año">Año de estreno:</label>
-            <input type="number" name="año" value="" placeholder="2019">
-
-            <button class="uk-button uk-button-default uk-modal-close" type="Cancel">Cancelar</button>
-            <button class="uk-button uk-button-primary" type="Search">Buscar</button>
-          </form>
-        </div>
-      </div>
-
+      
       <!-- MOdal del usuario -->
-      <a id="corazón" href="favoritos.html"><img src="img/corazon.png" alt=""> </a>
+     
       <a id="a_usuario" href="#modal-usuario" uk-toggle><img src="img/usuario.png" alt=""> </a>
       <div class="logedIn">
         <p id="p_nombre"></p>
@@ -98,9 +65,9 @@
           <h2 class="uk-modal-title">Ingrese sus datos</h2>
           <form class="LogIn" action="index.html" method="get">
             <label for="nombre">Nombre de usuario:</label>
-            <input type="text" name="nombre" value="" placeholder="Consu2002">
+            <input type="text" name="nombre" value="" placeholder="AbriNiell2002">
             <label for="">Correo electrónico:</label>
-            <input type="text" name="email" value="" placeholder="consuperrone@gmail.com">
+            <input type="text" name="email" value="" placeholder="abriniell@gmail.com">
             <p class="uk-text-right">
               <button class="uk-button uk-button-default uk-modal-close" type="Cancel">Cancelar</button>
               <button class="uk-button uk-button-primary" type="submit">Enviar</button>
@@ -111,6 +78,7 @@
 
     </div>
   </header>
+
 
   <!-- MAIN -->
   <main>
