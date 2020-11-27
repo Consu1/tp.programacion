@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
         var info_conteiner = document.querySelector(".info_conteiner");
         var foto_conteiner = document.querySelector(".foto_conteiner");
   
-        info_conteiner.innerHTML += '<h2><strong>' + datos.name + '</strong></h2>'
+        info_conteiner.innerHTML += '<h2><strong>' + datos.title + '</strong></h2>'
   
         var gnre = datos.genres
         var losgeneros = "";
@@ -51,7 +51,7 @@ window.addEventListener("load", function() {
         info_conteiner.innerHTML += '<h3><strong>Rating:</strong>' + ' <p><em>' + datos.vote_average + '</em></p></h3>'
   
         // fecha de estreno
-        info_conteiner.innerHTML += '<h3><strong>Fecha de estreno: </strong>' + datos.first_air_date + '</h3>'
+        info_conteiner.innerHTML += '<h3><strong>Fecha de estreno: </strong>' + datos.release_date+ '</h3>'
   
         // poster
         foto_conteiner.innerHTML = '<img src="https://image.tmdb.org/t/p/w500/' + datos.poster_path + '">'

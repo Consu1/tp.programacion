@@ -2,19 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Global site tag (gtag.js) - le estoy metiendo Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152881111-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-152881111-1');
-  </script>
-
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
@@ -89,7 +77,7 @@
             </select>
 
             <label for="año">Año de estreno:</label>
-            <input type="number" name="año" value="" placeholder="2020">
+            <input type="number" name="año" value="" placeholder="2019">
 
             <button class="uk-button uk-button-default uk-modal-close" type="Cancel">Cancelar</button>
             <button class="uk-button uk-button-primary" type="Search">Buscar</button>
@@ -126,6 +114,19 @@
   <main>
 
     <h2 id="titulos" class="primero">Favoritos</h2>
+    <ul class="pelisfavoritas">
+
+    </ul>
+
+    <h3 id="Cartel_nolog">Tiene que estar logeado para ver los favoritos</h3>
+
+
+
+  </main>
+
+  <main>
+
+    <h2 id="titulos" class="primero">Favoritos</h2>
     <ul class="seriesfavoritas">
 
     </ul>
@@ -155,11 +156,12 @@
     <div class="contacto">
       <h2>Contacto</h2>
 
-      <p>cperronellavar@udesa.edu.ar</p>
       <p>aniellpena@udesa.edu.ar</p>
+      <p>cperronellavar@udesa.edu.ar</p>
       <p>egarciaborghes@udesa.edu.ar</p>
     </div>
   </footer>
 </body>
 
 </html>
+
