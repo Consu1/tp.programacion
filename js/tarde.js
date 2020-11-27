@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
+window.addEventListener("load", function(){
     //Paso 1: Leo Storage
     var recuperoStorageTarde = localStorage.getItem("seriesFavoritosTarde");
     console.log(recuperoStorageTarde);
@@ -36,4 +36,4 @@ window.addEventListener("load", function() {
           document.querySelector('.tarde').style = "display:block"
         })
     }
-  }
+}

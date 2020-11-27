@@ -26,7 +26,7 @@ window.addEventListener("load", function() {
     var query2 = new URLSearchParams(querystring)
     var id = query2.get("id")
   
-    fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=c0e01d0df95b98b689dcb3af16007742&language=en-US")
+    fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=cc55526ed6d9221ada36a41066b7c9ea&language=en-US")
       .then(function(respuesta) {
         return respuesta.json();
       })
@@ -61,7 +61,7 @@ window.addEventListener("load", function() {
         }
       })
     ///////TRAILER
-    fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=c0e01d0df95b98b689dcb3af16007742&language=en-US")
+    fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=cc55526ed6d9221ada36a41066b7c9ea&language=en-US")
       .then(function(respuesta) {
         return respuesta.json();
       })
@@ -84,7 +84,7 @@ window.addEventListener("load", function() {
       // document.querySelector("#boton-recom").innerHTML = "Recomendaciones";
     }
     /////////////////// RECOMENDADOS
-    fetch("https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key=c0e01d0df95b98b689dcb3af16007742&language=en-US&page=1")
+    fetch("https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key=cc55526ed6d9221ada36a41066b7c9ea&language=en-US&page=1")
       .then(function(respuesta) {
         return respuesta.json();
       })
@@ -111,7 +111,7 @@ window.addEventListener("load", function() {
     if (seriesFavoritos.includes(id)) {
       document.querySelector(".botonFavorito").innerHTML = "Quitar de Favoritos";
     }
-    fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=c0e01d0df95b98b689dcb3af16007742&language=en-US")
+    fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=cc55526ed6d9221ada36a41066b7c9ea&language=en-US")
       .then(function(response) {
         return response.json();
       })
@@ -141,7 +141,7 @@ window.addEventListener("load", function() {
     if (seriesFavoritos.includes(idTarde)) {
       document.querySelector(".botonFavoritoTarde").innerHTML = "Quitar de ver más tarde";
     }
-    fetch("https://api.themoviedb.org/3/tv/" + idTarde + "?api_key=c0e01d0df95b98b689dcb3af16007742&language=en-US")
+    fetch("https://api.themoviedb.org/3/tv/" + idTarde + "?api_key=cc55526ed6d9221ada36a41066b7c9ea&language=en-US")
       .then(function(response) {
         return response.json();
       })
